@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul {
+    display:flex;
+    flex-direction: column;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+}
+
+.topSection {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.middleSection {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.middleSection li {
+    display: flex;  
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid white;
+    background-color: #2196f3;
+    color: white;
+}
+
+.listItem input {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto 0px;
+}
+
+.lowerSection {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.lowerSection li {
+    display: flex;
+}

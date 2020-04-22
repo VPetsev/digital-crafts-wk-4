@@ -8,35 +8,38 @@
     <div class="topSection">
         Enter Task
         <input type="text" id="taskNameTextBox"></input>
-        <button id="addTaskButton">Add</button>
+        <button id="addTaskButton">Add To-Do Item</button>
     </div>
+    
     <div class="middleSection">
         <h1 class="title">Pending Tasks</h1>
         <ul id="pendingTasksList">
-            <li class="listItem" id='toDoItemOne'>
-                <input id="checkboxOne" type="checkbox" onclick="checkboxStatus('checkboxOne', 'toDoItemOne')"/>
-                <p class="listItemText">Pending Task 1</p>
-                <p class="Remove">Remove</p>
+            <li class="listItem">
+                <input id="checkbox-1" type="checkbox" onclick="checkboxStatus('checkbox-1', 'toDoItem-1')"/>
+                <p class="listItemText">Wash the car</p>
+                <button class="remove">Remove</button>
             </li>
             <li class="listItem">
-                <input type="checkbox" onclick="checkboxStatus(2)"/>
-                <p class="listItemText">Pending Task 1</p>
-                <p class="Remove">Remove</p>
+                <input id="checkbox-2" type="checkbox" onclick="checkboxStatus('checkbox-2', 'toDoItem-2')"/>
+                <p class="listItemText">Get groceries</p>
+                <button class="remove">Remove</button>
             </li>
         </ul>
     </div>
+
     <div class="lowerSection">
         <h1 class="title">Completed Tasks</h1>
         <ul id="completedTasksList">
             <li class="listItem">
-                <input type="checkbox" onclick="checkboxStatus(3)" />
-                <p class="listItemText">Completed Task 1</p>
-                <!-- Remove option-->
+                <input id="completedCheckbox-1" type="checkbox" onclick="checkboxStatus('completedCheckbox-1', 'completedItem-1')"/>
+                <p class="listItemText">Mow the Lawn</p>
+                <button class="remove">Remove</button>
             </li>
             <li class="listItem">
-                <input type="checkbox" onclick="checkboxStatus(4)"/>
-                <p class="listItemText">Completed Task 1</p>
-                <p class="Remove">Remove</p>
+                <input id="completedCheckbox-2" type="checkbox"
+                    onclick="checkboxStatus('completedCheckbox-2', 'completedItem-2')"/>
+                <p class="listItemText">Wash a dish</p>
+                <button class="remove">Remove</button>
             </li>
         </ul>
     </div>
